@@ -1,6 +1,6 @@
 import tkinter #for creating the window
-import requests#for requesting the weather data
-import json#for making the raw json usable
+import requests#for making api call and requesting the weather data
+import json#for working with the raw json data from api call
 
 api_key = "5957d1aeff3d4cc185d101803212311"
 #doing a get request and storing the response
