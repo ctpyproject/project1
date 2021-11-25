@@ -75,5 +75,5 @@ air_index.place(x=20,y=200)
 
 
 
-
+#inbuilt infinite loop to run the program
 window.mainloop()
