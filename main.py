@@ -52,10 +52,16 @@ pic.create_image(40,60,image=img)
 #text widget defintion
 condition = tkinter.Label(window,text=cond)#,width=10)
 temperature = tkinter.Label(window,text=temp_c)
-location = tkinter.Label(window,justify="right",text=f"{location}\n{state}\n{country}")
+location = tkinter.Label(window,justify="right",
+text=f"{location}\n{state}\n{country}")
+
 degree = tkinter.Label(window,text="°C")
-extra_info=tkinter.Label(window,justify="left",text=f"humidity: {humidity}%\nwindspeed: {wind}km/h\nwind direction: {wind_direction}\nfeels like: {feelslike}°C")
-air_index = tkinter.Label(window,justify="left",text=f"air quality index:\n  CO: {round(aqi_co,2)}ppm\t\tNO2: {aqi_no2}ppb\n  O3: {round(aqi_o3,2)}ppb\t\tSO2: {aqi_so2}ppb")
+
+extra_info=tkinter.Label(window,justify="left",
+text=f"humidity: {humidity}%\nwindspeed: {wind}km/h\nwind direction: {wind_direction}\nfeels like: {feelslike}°C")
+
+air_index = tkinter.Label(window,justify="left",
+text=f"air quality index:\n  CO: {round(aqi_co,2)}ppm\t\tNO2: {aqi_no2}ppb\n  O3: {round(aqi_o3,2)}ppb\t\tSO2: {round(aqi_so2,2)}ppb")
 
 #text configs
 condition.config(font=('Sans-serif','18'))
@@ -72,7 +78,6 @@ location.place(x=285,y=100)
 degree.place(x=200,y=20)
 extra_info.place(x=15,y=110)
 air_index.place(x=20,y=200)
-
 
 
 #inbuilt infinite loop to run the program
